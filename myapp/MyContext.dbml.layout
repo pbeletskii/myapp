@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="MyContext">
+  <DataContextMoniker Name="/MyContextDataContext" />
+  <nestedChildShapes>
+    <classShape Id="2f9a6c91-6ff1-4286-b3dd-e5c56961ad22" absoluteBounds="2.875, 0.875, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/MyContextDataContext/City" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cfded255-7bf8-44ea-8bd2-cb6a7f04d71b" absoluteBounds="2.89, 1.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2ab3339a-6e12-463d-a6c8-04af7a4ef16c" absoluteBounds="2.875, 2.625, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/MyContextDataContext/Office" />
+      <nestedChildShapes>
+        <elementListCompartment Id="18529900-d8a9-4121-86c6-67ee1a370777" absoluteBounds="2.89, 3.085, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.46875 : 2.06899251302083); (3.46875 : 2.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MyContextDataContext/City/City_Office" />
+      <nodes>
+        <classShapeMoniker Id="2f9a6c91-6ff1-4286-b3dd-e5c56961ad22" />
+        <classShapeMoniker Id="2ab3339a-6e12-463d-a6c8-04af7a4ef16c" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="915301e7-78ee-458a-a628-cb5854700c8b" absoluteBounds="5.375, 0.875, 2, 1.9631982421875">
+      <DataClassMoniker Name="/MyContextDataContext/Passenger" />
+      <nestedChildShapes>
+        <elementListCompartment Id="10afbfda-9288-4ea2-8202-97d00319c77c" absoluteBounds="5.39, 1.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2d7f932b-c911-4e9b-b470-a631c1ced776" absoluteBounds="5.5, 3.125, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/MyContextDataContext/Staff" />
+      <nestedChildShapes>
+        <elementListCompartment Id="69081679-5e35-4209-a7f8-6f09cf4a43bf" absoluteBounds="5.515, 3.585, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.875 : 4.67710611979167); (5.5 : 4.67710611979167)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MyContextDataContext/Office/Office_Staff" />
+      <nodes>
+        <classShapeMoniker Id="2ab3339a-6e12-463d-a6c8-04af7a4ef16c" />
+        <classShapeMoniker Id="2d7f932b-c911-4e9b-b470-a631c1ced776" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="9012b40f-7fae-4080-bf60-bc5510d1adcd" absoluteBounds="8.125, 1.125, 2, 1.3862939453125">
+      <DataClassMoniker Name="/MyContextDataContext/Tour" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d3c16392-6097-444b-971d-efdd5a44560a" absoluteBounds="8.14, 1.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c083d08b-3b38-4350-870a-35baffde7d14" absoluteBounds="8.125, 3.375, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/MyContextDataContext/Taken_Tour" />
+      <nestedChildShapes>
+        <elementListCompartment Id="425b8bc3-8fe8-4af1-9e7f-20a4156542ce" absoluteBounds="8.14, 3.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.375 : 1.85659912109375); (7.875 : 1.85659912109375); (7.875 : 2.6362939453125); (9.125 : 2.6362939453125); (9.125 : 3.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MyContextDataContext/Passenger/Passenger_Taken_Tour" />
+      <nodes>
+        <classShapeMoniker Id="915301e7-78ee-458a-a628-cb5854700c8b" />
+        <classShapeMoniker Id="c083d08b-3b38-4350-870a-35baffde7d14" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="36fc74da-ea1d-4e49-95b3-d2969af762cd" absoluteBounds="0.5, 0.5, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/MyContextDataContext/Available_Tour" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f8462a70-29e9-41bc-91be-0992ae5138f4" absoluteBounds="0.51499999999999968, 0.96, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 2.34699625651042); (3.38541666666667 : 2.34699625651042 : JumpStart); (3.55208333333333 : 2.34699625651042 : JumpEnd); (5.3125 : 2.34699625651042); (5.3125 : 2.9006982421875); (9.125 : 2.9006982421875); (9.125 : 3.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MyContextDataContext/Available_Tour/Available_Tour_Taken_Tour" />
+      <nodes>
+        <classShapeMoniker Id="36fc74da-ea1d-4e49-95b3-d2969af762cd" />
+        <classShapeMoniker Id="c083d08b-3b38-4350-870a-35baffde7d14" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.875 : 1.47199625651042); (2.5 : 1.47199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MyContextDataContext/City/City_Available_Tour" />
+      <nodes>
+        <classShapeMoniker Id="2f9a6c91-6ff1-4286-b3dd-e5c56961ad22" />
+        <classShapeMoniker Id="36fc74da-ea1d-4e49-95b3-d2969af762cd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.875 : 3.21715413411458); (2.5 : 3.21715413411458)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MyContextDataContext/Office/Office_Available_Tour" />
+      <nodes>
+        <classShapeMoniker Id="2ab3339a-6e12-463d-a6c8-04af7a4ef16c" />
+        <classShapeMoniker Id="36fc74da-ea1d-4e49-95b3-d2969af762cd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.875 : 1.11099812825521); (2.5 : 1.11099812825521)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MyContextDataContext/City/City_Available_Tour1" />
+      <nodes>
+        <classShapeMoniker Id="2f9a6c91-6ff1-4286-b3dd-e5c56961ad22" />
+        <classShapeMoniker Id="36fc74da-ea1d-4e49-95b3-d2969af762cd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.125 : 1.125); (9.125 : 0.65625); (2.5 : 0.65625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MyContextDataContext/Tour/Tour_Available_Tour" />
+      <nodes>
+        <classShapeMoniker Id="9012b40f-7fae-4080-bf60-bc5510d1adcd" />
+        <classShapeMoniker Id="36fc74da-ea1d-4e49-95b3-d2969af762cd" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="c5fed56f-1be1-456f-b475-35b1bcd800e6" absoluteBounds="0.5, 4.375, 2, 1.3862939453125">
+      <DataClassMoniker Name="/MyContextDataContext/DelayofTour" />
+      <nestedChildShapes>
+        <elementListCompartment Id="68f4f60e-d4da-43cb-bf6c-f1092a1041f2" absoluteBounds="0.51499999999999968, 4.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.5 : 3.80930826822917); (1.5 : 4.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MyContextDataContext/Available_Tour/Available_Tour_DelayofTour" />
+      <nodes>
+        <classShapeMoniker Id="36fc74da-ea1d-4e49-95b3-d2969af762cd" />
+        <classShapeMoniker Id="c5fed56f-1be1-456f-b475-35b1bcd800e6" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
